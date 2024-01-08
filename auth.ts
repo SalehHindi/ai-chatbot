@@ -30,7 +30,7 @@ export const {
       return session
     },
     authorized({ auth }) {
-      return !!auth?.user // this ensures there is a logged in user for -every- request
+      return true
     }
   },
   pages: {

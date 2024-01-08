@@ -136,6 +136,11 @@ function IconGitHub({ className, ...props }: React.ComponentProps<'svg'>) {
     </svg>
   )
 }
+function IconPartiful({ className, ...props }: React.ComponentProps<'svg'>) {
+  return (
+    <img src="partiful.png"></img>
+  )
+}
 
 function IconSeparator({ className, ...props }: React.ComponentProps<'svg'>) {
   return (
@@ -482,6 +487,7 @@ export {
   IconOpenAI,
   IconVercel,
   IconGitHub,
+  IconPartiful,
   IconSeparator,
   IconArrowDown,
   IconArrowRight,

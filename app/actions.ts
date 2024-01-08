@@ -8,9 +8,9 @@ import { auth } from '@/auth'
 import { type Chat } from '@/lib/types'
 
 export async function getChats(userId?: string | null) {
-  if (!userId) {
-    return []
-  }
+  // if (!userId) {
+  //   return []
+  // }
 
   try {
     const pipeline = kv.pipeline()

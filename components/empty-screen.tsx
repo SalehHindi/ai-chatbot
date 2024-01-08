@@ -28,7 +28,7 @@ export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
           Welcome friend
         </h1>
         <p className="mb-2 leading-normal text-muted-foreground">
-          <Image src="nikita.png" width={1198} height={360} />
+          <Image src="nikita.png" width={1198} height={360} alt="Picture of Nikita"/>
         </p>
         <p className="leading-normal text-muted-foreground">
           Try sending a URL like https://www.google.com/

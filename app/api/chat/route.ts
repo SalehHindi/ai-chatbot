@@ -33,7 +33,7 @@ export async function POST(req: Request) {
     const response = await fetch(url);
     const html = await response.text();
     const dom = new JSDOM(html);
-    textContent = dom.window.document.body.textContent.replace(/\s+/g, ' ').trim();
+    textContent = dom?.window?.document?.body?.textContent?.replace(/\s+/g, ' ').trim() ? dom?.window?.document?.body?.textContent?.replace(/\s+/g, ' ').trim() : ""
 
     // return new Response(textContent, {
     //   headers: {

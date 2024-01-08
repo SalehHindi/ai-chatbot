@@ -3,6 +3,7 @@ import { UseChatHelpers } from 'ai/react'
 import { Button } from '@/components/ui/button'
 import { ExternalLink } from '@/components/external-link'
 import { IconArrowRight } from '@/components/ui/icons'
+import Image from 'next/image';
 
 const exampleMessages = [
   {
@@ -27,16 +28,10 @@ export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
           Welcome friend
         </h1>
         <p className="mb-2 leading-normal text-muted-foreground">
-          <img src="nikita.png"></img>
-          {/* This is an open source AI chatbot app template built with{' '}
-          <ExternalLink href="https://nextjs.org">Next.js</ExternalLink> and{' '}
-          <ExternalLink href="https://vercel.com/storage/kv">
-            Vercel KV
-          </ExternalLink>
-          . */}
+          <Image src="nikita.png" />
         </p>
         <p className="leading-normal text-muted-foreground">
-          Try sending a URL like "https://www.google.com/"
+          Try sending a URL like https://www.google.com/
         </p>
         <div className="mt-4 flex flex-col items-start space-y-2">
           {exampleMessages.map((message, index) => (
